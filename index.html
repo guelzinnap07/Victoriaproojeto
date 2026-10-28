@@ -129,11 +129,17 @@
     }
 
     function toggleMusic() {
+          function toggleMusic() {
       const music = document.getElementById('bg-music');
       const btn = document.getElementById('music-toggle-btn');
+      
       if (music.paused) {
-        music.play();
-        btn.innerHTML = "⏸️ Pausar Música";
+        music.play().then(() => {
+          btn.innerHTML = "⏸️ Pausar Música";
+        }).catch(error => {
+          console.log("Erro ao reproduzir:", error);
+          alert("Clica novamente no botão para ativar a música!");
+        });
       } else {
         music.pause();
         btn.innerHTML = "🎵 Tocar Música Romântica";
