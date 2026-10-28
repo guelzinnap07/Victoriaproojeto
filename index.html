@@ -143,7 +143,7 @@
 
     .gallery-img {
       width: 100%;
-      height: 160px;
+      height: 180px;
       object-fit: cover;
       border-radius: 12px;
       border: 3px solid white;
@@ -203,14 +203,14 @@
     <!-- TELA 1: Boas-Vindas -->
     <div id="screen1" class="card">
       <h1 style="font-size: 1.8rem; margin-bottom: 20px;">Meu amor, olha o que eu fiz para você... ❤️</h1>
-      <p>Preparei essa surpresa com todo o meu carinho para te lembrar do quanto você é especial para mim e como cada momento ao seu lado transforma a minha vida.</p>
+      <p>Preparei esta surpresa com todo o meu carinho para te lembrar do quanto você é especial para mim e como cada momento ao seu lado transforma a minha vida.</p>
       <button class="btn" onclick="nextScreen(2)">Deixe-me ver ✨</button>
     </div>
 
     <!-- TELA 2: Linha do Tempo e Foto Principal -->
     <div id="screen2" class="card hidden">
       <h2>Nossa História ❤️</h2>
-      <p style="font-size: 0.95rem; color: #888; margin-bottom: 10px;">Juntos e apaixonados desde 28/10/2025</p>
+      <p style="font-size: 0.95rem; color: #888; margin-bottom: 10px;">Juntos e conversando desde 28/10/2025</p>
       
       <div class="timer-grid">
         <div class="timer-box">
@@ -231,7 +231,7 @@
         </div>
       </div>
 
-      <!-- FOTO PRINCIPAL -->
+      <!-- FOTO PRINCIPAL (36132.jpg) -->
       <img src="36132.jpg" alt="Foto Principal do Casal" class="couple-img" onerror="this.src='https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=600'">
 
       <p>Desde o primeiro instante em que você entrou na minha vida, o tempo ganhou outro sentido. Cada dia, hora e segundo ao seu lado são os melhores da minha história!</p>
@@ -239,15 +239,14 @@
       <button class="btn" onclick="nextScreen(3)">Nossas Lembranças 📸</button>
     </div>
 
-    <!-- TELA 3: Galeria de Fotos e Motivos de Amar -->
+    <!-- TELA 3: Galeria com as fotos enviadas -->
     <div id="screen3" class="card hidden">
       <h2>Momentos Inesquecíveis ✨</h2>
       <p>Algumas fotos para nos lembrar de como é bom estarmos juntos:</p>
 
       <div class="photo-gallery">
-        <!-- Você pode colocar foto2.jpg e foto3.jpg na pasta, ou o código carrega fotos lindas de exemplo se não achar -->
-        <img src="foto2.jpg" alt="Momento 1" class="gallery-img" onerror="this.src='https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=500'">
-        <img src="foto3.jpg" alt="Momento 2" class="gallery-img" onerror="this.src='https://images.unsplash.com/photo-1494774157365-9e04c6720e47?w=500'">
+        <img src="36132.jpg" alt="Momento 1" class="gallery-img">
+        <img src="foto2.jpg" alt="Momento 2" class="gallery-img" onerror="this.src='https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=500'">
       </div>
 
       <h3>Motivos por eu te amar tanto:</h3>
@@ -255,7 +254,7 @@
         <li>✨ O seu sorriso ilumina completamente o meu dia.</li>
         <li>💖 Você me faz querer ser alguém melhor a cada dia.</li>
         <li>😊 O seu abraço é o meu lugar favorito no mundo.</li>
-        <li>🌟 A sua risada é o som mais gostoso de ouvir.</li>
+        <li>🌟 A sua companhia é a melhor coisa que me aconteceu.</li>
       </ul>
 
       <button class="btn" onclick="nextScreen(4)">Minha Carta para Você 💌</button>
