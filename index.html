@@ -13,242 +13,68 @@
       --text: #590d22;
       --card-bg: #ffffff;
     }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    body {
-      background-color: var(--background);
-      color: var(--text);
-      min-height: 100vh;
-      overflow-x: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .heart-bg {
-      position: fixed;
-      top: -10vh;
-      font-size: 1.5rem;
-      color: rgba(255, 77, 109, 0.3);
-      animation: fall linear infinite;
-      z-index: 0;
-      user-select: none;
-      pointer-events: none;
-    }
-
-    @keyframes fall {
-      to {
-        transform: translateY(115vh) rotate(360deg);
-      }
-    }
-
-    .container {
-      width: 90%;
-      max-width: 600px;
-      margin: 20px auto;
-      z-index: 10;
-      position: relative;
-    }
-
-    .card {
-      background: var(--card-bg);
-      padding: 30px;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(255, 77, 109, 0.15);
-      text-align: center;
-      transition: all 0.5s ease;
-    }
-
-    .hidden {
-      display: none !important;
-    }
-
-    h1, h2, h3 {
-      color: var(--primary);
-      margin-bottom: 15px;
-    }
-
-    p {
-      line-height: 1.6;
-      margin-bottom: 20px;
-      font-size: 1.05rem;
-    }
-
-    .btn {
-      background: linear-gradient(45deg, var(--primary), var(--secondary));
-      color: white;
-      border: none;
-      padding: 12px 28px;
-      font-size: 1.1rem;
-      font-weight: bold;
-      border-radius: 50px;
-      cursor: pointer;
-      box-shadow: 0 4px 15px rgba(255, 77, 109, 0.3);
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    .btn:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 20px rgba(255, 77, 109, 0.4);
-    }
-
-    .timer-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 10px;
-      margin: 20px 0;
-    }
-
-    .timer-box {
-      background: var(--background);
-      padding: 10px;
-      border-radius: 10px;
-      border: 1px solid rgba(255, 77, 109, 0.2);
-    }
-
-    .timer-number {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: var(--primary);
-      display: block;
-    }
-
-    .timer-label {
-      font-size: 0.8rem;
-      color: var(--text);
-    }
-
-    .couple-img {
-      width: 100%;
-      max-height: 380px;
-      object-fit: cover;
-      border-radius: 15px;
-      border: 4px solid white;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      margin: 15px 0;
-    }
-
-    .photo-gallery {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      margin: 15px 0;
-    }
-
-    .gallery-img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 12px;
-      border: 3px solid white;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-
-    .letter-box {
-      background: #fffafb;
-      border: 2px dashed var(--secondary);
-      padding: 20px;
-      border-radius: 15px;
-      text-align: left;
-      margin: 20px 0;
-      white-space: pre-line;
-      max-height: 250px;
-      overflow-y: auto;
-      font-size: 1rem;
-    }
-
-    .reasons-list {
-      text-align: left;
-      margin: 20px 0;
-      padding-left: 20px;
-      line-height: 1.8;
-    }
-
-    .reasons-list li {
-      margin-bottom: 8px;
-    }
-
-    .question-section {
-      margin-top: 25px;
-      position: relative;
-      min-height: 120px;
-    }
-
-    .btn-container {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      margin-top: 15px;
-      position: relative;
-    }
-
-    #no-btn {
-      position: relative;
-      transition: all 0.2s ease;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    body { background-color: var(--background); color: var(--text); min-height: 100vh; overflow-x: hidden; display: flex; justify-content: center; align-items: center; }
+    .heart-bg { position: fixed; top: -10vh; font-size: 1.5rem; color: rgba(255, 77, 109, 0.3); animation: fall linear infinite; z-index: 0; user-select: none; pointer-events: none; }
+    @keyframes fall { to { transform: translateY(115vh) rotate(360deg); } }
+    .container { width: 90%; max-width: 600px; margin: 20px auto; z-index: 10; position: relative; }
+    .card { background: var(--card-bg); padding: 30px; border-radius: 20px; box-shadow: 0 10px 30px rgba(255, 77, 109, 0.15); text-align: center; transition: all 0.5s ease; }
+    .hidden { display: none !important; }
+    h1, h2, h3 { color: var(--primary); margin-bottom: 15px; }
+    p { line-height: 1.6; margin-bottom: 20px; font-size: 1.05rem; }
+    .btn { background: linear-gradient(45deg, var(--primary), var(--secondary)); color: white; border: none; padding: 12px 28px; font-size: 1.1rem; font-weight: bold; border-radius: 50px; cursor: pointer; box-shadow: 0 4px 15px rgba(255, 77, 109, 0.3); transition: transform 0.2s, box-shadow 0.2s; margin: 5px; }
+    .btn:hover { transform: scale(1.05); box-shadow: 0 6px 20px rgba(255, 77, 109, 0.4); }
+    .music-btn { background: linear-gradient(45deg, #4ea8de, #5390d9); box-shadow: 0 4px 15px rgba(78, 168, 222, 0.3); }
+    .timer-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 20px 0; }
+    .timer-box { background: var(--background); padding: 10px; border-radius: 10px; border: 1px solid rgba(255, 77, 109, 0.2); }
+    .timer-number { font-size: 1.5rem; font-weight: bold; color: var(--primary); display: block; }
+    .timer-label { font-size: 0.8rem; color: var(--text); }
+    .couple-img { width: 100%; max-height: 380px; object-fit: cover; border-radius: 15px; border: 4px solid white; box-shadow: 0 5px 15px rgba(0,0,0,0.1); margin: 15px 0; }
+    .photo-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 15px 0; }
+    .gallery-img { width: 100%; height: 180px; object-fit: cover; border-radius: 12px; border: 3px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    .letter-box { background: #fffafb; border: 2px dashed var(--secondary); padding: 20px; border-radius: 15px; text-align: left; margin: 20px 0; white-space: pre-line; max-height: 250px; overflow-y: auto; font-size: 1rem; }
+    .reasons-list { text-align: left; margin: 20px 0; padding-left: 20px; line-height: 1.8; }
+    .reasons-list li { margin-bottom: 8px; }
+    .question-section { margin-top: 25px; position: relative; min-height: 120px; }
+    .btn-container { display: flex; justify-content: center; gap: 15px; margin-top: 15px; position: relative; }
+    #no-btn { position: relative; transition: all 0.2s ease; }
   </style>
 </head>
 <body>
-
   <div id="hearts-container"></div>
-
+  <audio id="bg-music" loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-tenderness.mp3" type="audio/mp3">
+  </audio>
   <div class="container">
-    
-    <!-- TELA 1 -->
     <div id="screen1" class="card">
       <h1 style="font-size: 1.8rem; margin-bottom: 20px;">Meu amor, olha o que eu fiz para você... ❤️</h1>
       <p>Preparei esta surpresa com todo o meu carinho para te lembrar do quanto você é especial para mim e como cada momento ao seu lado transforma a minha vida.</p>
+      <div style="margin-bottom: 15px;">
+        <button id="music-toggle-btn" class="btn music-btn" onclick="toggleMusic()">🎵 Tocar Música Romântica</button>
+      </div>
       <button class="btn" onclick="nextScreen(2)">Deixe-me ver ✨</button>
     </div>
-
-    <!-- TELA 2 -->
-    <div id="screen2" class="card hidden">
+        <div id="screen2" class="card hidden">
       <h2>Nossa História ❤️</h2>
       <p style="font-size: 0.95rem; color: #888; margin-bottom: 10px;">Juntos e conversando desde 28/10/2025</p>
-      
       <div class="timer-grid">
-        <div class="timer-box">
-          <span id="days" class="timer-number">0</span>
-          <span class="timer-label">Dias</span>
-        </div>
-        <div class="timer-box">
-          <span id="hours" class="timer-number">0</span>
-          <span class="timer-label">Horas</span>
-        </div>
-        <div class="timer-box">
-          <span id="minutes" class="timer-number">0</span>
-          <span class="timer-label">Min</span>
-        </div>
-        <div class="timer-box">
-          <span id="seconds" class="timer-number">0</span>
-          <span class="timer-label">Seg</span>
-        </div>
+        <div class="timer-box"><span id="days" class="timer-number">0</span><span class="timer-label">Dias</span></div>
+        <div class="timer-box"><span id="hours" class="timer-number">0</span><span class="timer-label">Horas</span></div>
+        <div class="timer-box"><span id="minutes" class="timer-number">0</span><span class="timer-label">Min</span></div>
+        <div class="timer-box"><span id="seconds" class="timer-number">0</span><span class="timer-label">Seg</span></div>
       </div>
-
-      <!-- FOTO PRINCIPAL -->
-      <img src="IMG-20261027-WA0050.jpg" alt="Foto Principal do Casal" class="couple-img">
-
+      <img src="IMG-20261027-WA0038.jpg" alt="Foto Principal do Casal" class="couple-img">
       <p>Desde o primeiro instante em que você entrou na minha vida, o tempo ganhou outro sentido. Cada dia, hora e segundo ao seu lado são os melhores da minha história!</p>
-
       <button class="btn" onclick="nextScreen(3)">Nossas Lembranças 📸</button>
     </div>
 
-    <!-- TELA 3 -->
     <div id="screen3" class="card hidden">
       <h2>Momentos Inesquecíveis ✨</h2>
       <p>Algumas fotos para nos lembrar de como é bom estarmos juntos:</p>
-
       <div class="photo-gallery">
         <img src="IMG-20261027-WA0050.jpg" alt="Momento 1" class="gallery-img">
         <img src="IMG-20261027-WA0052.jpg" alt="Momento 2" class="gallery-img">
       </div>
-
       <h3>Motivos por eu te amar tanto:</h3>
       <ul class="reasons-list">
         <li>✨ O seu sorriso ilumina completamente o meu dia.</li>
@@ -256,14 +82,11 @@
         <li>😊 O seu abraço é o meu lugar favorito no mundo.</li>
         <li>🌟 A sua companhia é a melhor coisa que me aconteceu.</li>
       </ul>
-
       <button class="btn" onclick="nextScreen(4)">Minha Carta para Você 💌</button>
     </div>
 
-    <!-- TELA 4 -->
     <div id="screen4" class="card hidden">
       <h2>Uma Carta Aberta de Amor 💌</h2>
-      
       <div class="letter-box">
         Meu grande amor,
 
@@ -275,7 +98,6 @@
 
         Te amo mais do que as palavras conseguem explicar! ❤️
       </div>
-
       <div class="question-section">
         <h3>A pergunta que não quer calar: Quanto você me ama?</h3>
         <div class="btn-container">
@@ -284,66 +106,59 @@
         </div>
       </div>
     </div>
-
   </div>
 
   <script>
     const startDate = new Date('2025-10-28T00:00:00');
-
     function updateTimer() {
       const now = new Date();
       const diff = now - startDate;
-
       if (diff > 0) {
-        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-        const minutes = Math.floor((diff / 1000 / 60) % 60);
-        const seconds = Math.floor((diff / 1000) % 60);
-
-        document.getElementById('days').innerText = days;
-        document.getElementById('hours').innerText = hours;
-        document.getElementById('minutes').innerText = minutes;
-        document.getElementById('seconds').innerText = seconds;
+        document.getElementById('days').innerText = Math.floor(diff / (1000 * 60 * 60 * 24));
+        document.getElementById('hours').innerText = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        document.getElementById('minutes').innerText = Math.floor((diff / 1000 / 60) % 60);
+        document.getElementById('seconds').innerText = Math.floor((diff / 1000) % 60);
       }
     }
-
     setInterval(updateTimer, 1000);
     updateTimer();
 
-    function nextScreen(screenNumber) {
-      document.getElementById('screen1').classList.add('hidden');
-      document.getElementById('screen2').classList.add('hidden');
-      document.getElementById('screen3').classList.add('hidden');
-      document.getElementById('screen4').classList.add('hidden');
+    function nextScreen(num) {
+      document.querySelectorAll('.card').forEach(c => c.classList.add('hidden'));
+      document.getElementById('screen' + num).classList.remove('hidden');
+    }
 
-      document.getElementById('screen' + screenNumber).classList.remove('hidden');
+    function toggleMusic() {
+      const music = document.getElementById('bg-music');
+      const btn = document.getElementById('music-toggle-btn');
+      if (music.paused) {
+        music.play();
+        btn.innerHTML = "⏸️ Pausar Música";
+      } else {
+        music.pause();
+        btn.innerHTML = "🎵 Tocar Música Romântica";
+      }
     }
 
     function moveButton() {
       const btn = document.getElementById('no-btn');
       const x = Math.random() * (window.innerWidth - btn.offsetWidth - 40) - (window.innerWidth / 2 - 100);
       const y = Math.random() * 200 - 100;
-      
       btn.style.transform = `translate(${x}px, ${y}px)`;
     }
 
     function celebrate() {
-      confetti({
-        particleCount: 150,
-        spread: 80,
-        origin: { y: 0.6 }
-      });
+      confetti({ particleCount: 150, spread: 80, origin: { y: 0.6 } });
       alert('Eu também te amo infinitamente, meu amor! ❤️✨');
     }
 
     function createHearts() {
       const container = document.getElementById('hearts-container');
-      const heartSymbols = ['❤️', '💖', '💕', '💗'];
-      
+      const symbols = ['❤️', '💖', '💕', '💗'];
       for (let i = 0; i < 25; i++) {
         const heart = document.createElement('div');
         heart.classList.add('heart-bg');
-        heart.innerText = heartSymbols[Math.floor(Math.random() * heartSymbols.length)];
+        heart.innerText = symbols[Math.floor(Math.random() * symbols.length)];
         heart.style.left = Math.random() * 100 + 'vw';
         heart.style.animationDuration = (Math.random() * 3 + 3) + 's';
         heart.style.animationDelay = Math.random() * 5 + 's';
@@ -351,9 +166,7 @@
         container.appendChild(heart);
       }
     }
-
     createHearts();
   </script>
 </body>
-          </html>
-          
+</html>
